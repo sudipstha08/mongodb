@@ -19,3 +19,6 @@
 ## CRUD Operations
 - https://www.mongodb.com/docs/manual/crud/ 
 - https://www.tutorialspoint.com/mongodb/index.htm
+
+## Setup
+1. https://khalilstemmler.com/blogs/typescript/node-starter-project/
