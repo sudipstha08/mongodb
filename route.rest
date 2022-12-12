@@ -12,7 +12,7 @@ POST http://localhost:9000/subscribers
 Content-Type: application/json
 
 {
-	"name": "Rupana Shrestha",
+	"name": " Shrestha",
 	"subscribedToChannel": "Test"
 }
 
