@@ -1,24 +1,26 @@
 ## MONGODB
 
-## Commands
-1. show dbs
- - List databases
-2. use database_name
- - to use the database
-3. show collections
- - 
-4. db.dropDatabase()
-- deletes current database 
-5. cls
- - clear terminal screen
-6. exit
-- exits from mongosh
-7. db
-- show current database
+## Basic commands :wrench:
 
-## CRUD Operations
-- https://www.mongodb.com/docs/manual/crud/ 
-- https://www.tutorialspoint.com/mongodb/index.htm
+| Commands      | Description          |
+| ------------- | -------------------- |
+| `npm install` | install dependencies |
+
+## How to get started ? :runner:
+
+- Clone `Repository`
+- Install dependencies `npm install`
+- Create `.env` in the `root` directory. Take `.env.example` as reference
+- Run `development` server `npm start-dev`
+
+## Tech Stacks :package:
+
+| Tech         | Description    |
+| ------------ | -------------- |
+| `mongodb`    | NoSQL database |
+| `typescript` | JS with types  |
 
 ## Setup
+
 1. https://khalilstemmler.com/blogs/typescript/node-starter-project/
+2. https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript
