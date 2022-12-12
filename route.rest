@@ -12,8 +12,8 @@ POST http://localhost:9000/subscribers
 Content-Type: application/json
 
 {
-	"name": "Micheal Jordan",
-	"subscribedToChannel": "Web Dev simplified"
+	"name": "Rupana Shrestha",
+	"subscribedToChannel": "Test"
 }
 
 ### Delete one subscriber
@@ -21,11 +21,11 @@ Content-Type: application/json
 DELETE http://localhost:9000/subscribers/639740f372923093c15bd4be
 
 ### UPDATE one subscriber
-PATCH http://localhost:9000/subscribers/6397410672923093c15bd4c1
+PATCH http://localhost:9000/subscribers/639749750b8ece3422d13aed
 Content-Type: application/json
 
 {
-	"name": "Micheal Lukes"
+	"name": "Rupesh"
 }
 
 

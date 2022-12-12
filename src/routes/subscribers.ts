@@ -53,8 +53,7 @@ router.post('/', async (req, res) => {
 })
 
 // Updating one
-router.patch('/:id',getSubscriber, async (req, res: any) => {
-	console.log("PATCHING =>")
+router.patch('/:id', getSubscriber, async (req, res: any) => {
 	if (req.body.name !== null) {
 		res.subscriber.name = req.body.name
 	}
@@ -63,7 +62,7 @@ router.patch('/:id',getSubscriber, async (req, res: any) => {
 	}
 
 	try {
-		const updatedSubscriber = await res.subscriber.save()
+		const updatedSubscriber = await Subscriber.updateOne({ _id: req.params.id}, { name:"Selene"})
 		res.json(updatedSubscriber)
 	} catch (err: any) {
 		res.status(400).json({ message: err.message})
