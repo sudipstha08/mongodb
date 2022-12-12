@@ -15,12 +15,15 @@
 
 ## Tech Stacks :package:
 
-| Tech         | Description    |
-| ------------ | -------------- |
-| `mongodb`    | NoSQL database |
-| `typescript` | JS with types  |
+| Tech         | Description        |
+| ------------ | ------------------ |
+| `mongodb`    | NoSQL database     |
+| `mongoose`   | Object Modeling    |
+| `typescript` | Type safety for JS |
 
 ## Setup
 
 1. https://khalilstemmler.com/blogs/typescript/node-starter-project/
 2. https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript
+3. https://www.youtube.com/watch?v=DZBGEVgL2eE
+4. https://mongoosejs.com/
