@@ -2,7 +2,7 @@
   "name": "mongodb",
   "version": "1.0.0",
   "description": "mongodb mongoose",
-  "main": "src/index.ts",
+  "main": "src/server.ts",
   "scripts": {
     "start-dev": "npx nodemon"
   },
@@ -23,6 +23,10 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.8.0"
   }
 }

@@ -1,0 +1,31 @@
+### REST CLIENT VSCODE EXTENSION
+
+## Get subscribers
+GET http://localhost:9000/subscribers
+
+### Get one subscriber
+
+GET http://localhost:9000/subscribers/63973e80ed7f44f0ad0bed2d
+
+### Post one subscriber
+POST http://localhost:9000/subscribers
+Content-Type: application/json
+
+{
+	"name": "Micheal Jordan",
+	"subscribedToChannel": "Web Dev simplified"
+}
+
+### Delete one subscriber
+
+DELETE http://localhost:9000/subscribers/639740f372923093c15bd4be
+
+### UPDATE one subscriber
+PATCH http://localhost:9000/subscribers/6397410672923093c15bd4c1
+Content-Type: application/json
+
+{
+	"name": "Micheal Lukes"
+}
+
+
