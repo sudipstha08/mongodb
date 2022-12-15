@@ -12,8 +12,8 @@ POST http://localhost:9000/subscribers
 Content-Type: application/json
 
 {
-	"name": " Shrestha",
-	"subscribedToChannel": "Test"
+	"name": "Rupsana Shrestha",
+	"subscribedToChannel": "Hi"
 }
 
 ### Delete one subscriber

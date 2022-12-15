@@ -1,12 +1,12 @@
 import express, { NextFunction, Request, Response } from 'express'
-import Subscriber  from "../models/subscriber"
+import {SubscriberModel}  from "../models/subscriber"
 
 const router = express.Router()
 
 // Getting all
 router.get('/', async (req, res) => {
 	try {
-		const subscribers = await Subscriber.find()
+		const subscribers = await SubscriberModel.find()
 		res.json(subscribers)
 	} catch(err) {
 		if (err instanceof Error) {
@@ -24,7 +24,7 @@ router.get('/:id', getSubscriber, (req, res: any) => {
 async function getSubscriber(req: Request, res: any, next: NextFunction) {
 	let subscriber
 	try {
-		 subscriber = await Subscriber.findById(req.params.id)
+		 subscriber = await SubscriberModel.findById(req.params.id)
 		if(subscriber === null ) {
 			return 	res.status(404).json({ message: "Cannot find subscriber"})
 		}
@@ -38,7 +38,7 @@ async function getSubscriber(req: Request, res: any, next: NextFunction) {
 
 // Creating one
 router.post('/', async (req, res) => {
-	const subscriber = new Subscriber({
+	const subscriber = new SubscriberModel({
 		name: req.body.name,
 		subscribedToChannel: req.body.subscribedToChannel
 	})
@@ -62,7 +62,7 @@ router.patch('/:id', getSubscriber, async (req, res: any) => {
 	}
 
 	try {
-		const updatedSubscriber = await Subscriber.updateOne({ _id: req.params.id}, { name:"Selene"})
+		const updatedSubscriber = await SubscriberModel.updateOne({ _id: req.params.id}, { name:"Selene"})
 		res.json(updatedSubscriber)
 	} catch (err: any) {
 		res.status(400).json({ message: err.message})

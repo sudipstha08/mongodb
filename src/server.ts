@@ -13,7 +13,8 @@ db.on('error', (error) => {
   console.error("error:", error)
 })
 
-db.once('open', () => console.log('Connected to database'))
+db.once('open', () => console.log('<--------- CONNECTED TO DATABSE ---------->'))
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
@@ -25,5 +26,5 @@ const subscribersRouter = require('./routes/subscribers')
 app.use('/subscribers', subscribersRouter)
 
 app.listen(port, () => {
-  return console.log(`Express is listening at PORT: ${port}`);
+  return console.log(`<--------- LISTENING AT PORT: ${port}---------->`);
 });
