@@ -5,6 +5,7 @@
 | Commands      | Description          |
 | ------------- | -------------------- |
 | `npm install` | install dependencies |
+| `npm run start-dev` | run dev server |
 
 ## How to get started ? :runner:
 
