@@ -27,3 +27,4 @@
 2. https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript
 3. https://www.youtube.com/watch?v=DZBGEVgL2eE
 4. https://mongoosejs.com/
+5. https://mongoosejs.com/docs/typescript/statics-and-methods.html
